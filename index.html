@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1 class="heading">My Library</h1>
+            <div class="books">
+                Books
+                <div></div>
+            </div>
+            <div class="add"><i class="fa-solid fa-plus"></i> Add Book</div>
+            <div class="circle">NV</div>
+        </div>
+
+        <div class="main-grid"></div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="popup">
+        <div class="popup-header">
+            <h2>Add a New Book</h2>
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
+        </div>
+        <p>Book Title</p>
+        <input id="name" type="text" placeholder="Enter title (e.g, Moby Dick)">
+        <p>Author</p>
+        <input id="authorNam" type="text" placeholder="Enter author's full name">
+        <p>Page Count</p>
+        <input id="num" type="number" placeholder="(e.g, 500)">
+        <p>Status</p>
+        <select id="status">
+            <option value="read">✓ Read</option>
+            <option value="unread">✗ Not Read</option>
+        </select>
+        <div class="popup-buttons">
+            <button id="cancelBtn">Cancel</button>
+            <button id="addBookBtn">Add Book</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
